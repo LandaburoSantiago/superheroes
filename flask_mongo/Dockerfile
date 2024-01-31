@@ -4,7 +4,7 @@ COPY . ./flask_mongo
 # Copy the rest of the application code into the container
 COPY . .
 RUN ls
-RUN chmod +x /flask_mongo/start.sh
+RUN chmod +x ./flask_mongo/start.sh
 
 # Expose the port that your Flask app listens on
 EXPOSE 5000

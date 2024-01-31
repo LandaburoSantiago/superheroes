@@ -3,7 +3,7 @@ WORKDIR /flask_mongo
 COPY . ./flask_mongo
 # Copy the rest of the application code into the container
 COPY . .
-RUN chmod +x /start.sh
+RUN chmod +x ./start.sh
 
 # Expose the port that your Flask app listens on
 EXPOSE 5000
